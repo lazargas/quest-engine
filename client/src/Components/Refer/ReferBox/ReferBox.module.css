@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+
+.links{
+	padding:20px;
+	text-align: center;
+	background: rgb(255, 255, 255);
+}
+
+.linkEffect{
+        background: rgb(0,0,0);
+        padding: 10px 20px;
+		margin: 0 0;
+		color: #ffffff;
+		text-shadow: none;
+		position: relative;
+        border-radius: 10px;
+        border: 2px solid #000;
+        border-width: 3px;
+        border-color: #000;       
+}
+
+.linkEffect:hover{
+    background:rgb(0,0,0,0.7);
+    -webkit-transition: background 0.3s;
+    padding: 10px 20px;
+    margin: 0 0;
+    position: relative;
+}
+
+.linkEffect::before {
+    overflow: hidden;
+    padding: 10px 0;
+    max-width: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    content: attr(data-hover);
+}
+
+
+
+
+
+
